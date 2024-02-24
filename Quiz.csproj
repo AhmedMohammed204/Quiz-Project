@@ -1,0 +1,201 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{3DD77D52-C3CA-467C-A587-EB82DAEAA031}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>Quiz</RootNamespace>
+    <AssemblyName>Quiz</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="PresentationCore" />
+    <Reference Include="PresentationFramework" />
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Xaml" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="UIAutomationProvider" />
+    <Reference Include="WindowsBase" />
+    <Reference Include="WindowsFormsIntegration" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="clsQuestionInterface.cs" />
+    <Compile Include="clsTextColor.cs" />
+    <Compile Include="frmAddQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddQuestion.Designer.cs">
+      <DependentUpon>frmAddQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmAddUpdateUser.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmAddUpdateUser.Designer.cs">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboard.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboard.Designer.cs">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmDashboardMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmDashboardMain.Designer.cs">
+      <DependentUpon>frmDashboardMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmLogin.Designer.cs">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmMain.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmMain.Designer.cs">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmProfile.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmProfile.Designer.cs">
+      <DependentUpon>frmProfile.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuestion.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuestion.Designer.cs">
+      <DependentUpon>frmQuestion.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQuiz.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQuiz.Designer.cs">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="frmAddQuestion.resx">
+      <DependentUpon>frmAddQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmAddUpdateUser.resx">
+      <DependentUpon>frmAddUpdateUser.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboard.resx">
+      <DependentUpon>frmDashboard.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmDashboardMain.resx">
+      <DependentUpon>frmDashboardMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmLogin.resx">
+      <DependentUpon>frmLogin.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmMain.resx">
+      <DependentUpon>frmMain.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmProfile.resx">
+      <DependentUpon>frmProfile.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuestion.resx">
+      <DependentUpon>frmQuestion.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQuiz.resx">
+      <DependentUpon>frmQuiz.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\hide.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\show.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="AdminsBusinessLayer\AdminsBusinessLayer.csproj">
+      <Project>{5670e72f-bb4b-434c-a0d7-fa3e9b34cafb}</Project>
+      <Name>AdminsBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="QuestionOptionsBusinessLayer\QuestionOptionsBusinessLayer.csproj">
+      <Project>{4b16bde3-45ae-482c-b946-252d28832813}</Project>
+      <Name>QuestionOptionsBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="QuestionsBusinessLayer\QuestionsBusinessLayer.csproj">
+      <Project>{24a52eb1-3e2f-4761-a949-c1149296ca14}</Project>
+      <Name>QuestionsBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="SubjectsBusinessLayer\SubjectsBusinessLayer.csproj">
+      <Project>{05adcfba-7de8-4849-97bf-48837e94ec24}</Project>
+      <Name>SubjectsBusinessLayer</Name>
+    </ProjectReference>
+    <ProjectReference Include="UsersBusinessLayer\UsersBusinessLayer\UsersBusinessLayer.csproj">
+      <Project>{a74d2a05-6c50-45ca-a6b0-cf992e6ad825}</Project>
+      <Name>UsersBusinessLayer</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quiz.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\increase.png" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
